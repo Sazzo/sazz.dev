@@ -10,7 +10,11 @@ export default function Header() {
       <div className="space-background"></div>
 
       <Flex
-        paddingTop="40vh"
+        paddingTop={{
+          base: "30vh",
+          md: "40vh",
+          xl: "40vh",
+        }}
         paddingLeft={{
           base: "0rem",
           md: "7rem",
