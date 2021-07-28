@@ -11,7 +11,7 @@ export default function Header() {
 
       <Flex
         paddingTop={{
-          base: "30vh",
+          base: "35vh",
           md: "40vh",
           xl: "40vh",
         }}
