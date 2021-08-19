@@ -47,7 +47,7 @@ export default function Header() {
               xl: "initial",
             }}
           >
-            A kid who plays around with web development.
+            Software Engineer and Backend Developer.
           </Text>
           <HStack spacing={19}>
             <a href="https://twitter.com/FelipeSazz">
