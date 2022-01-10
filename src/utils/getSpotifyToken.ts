@@ -1,10 +1,7 @@
 import axios from "axios";
+import { SpotifyTokenResponse } from "../types/spotify";
 
 const { SPOTIFY_TOKEN, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET } = process.env;
-
-interface SpotifyTokenResponse {
-  access_token: string;
-}
 
 export default async function getSpotifyToken() {
   const tokenParams = `grant_type=refresh_token&refresh_token=${SPOTIFY_TOKEN}`;

@@ -16,6 +16,10 @@ export interface SpotifyCurrentTrackResponse {
   };
 }
 
+export interface SpotifyTokenResponse {
+  access_token: string;
+}
+
 export interface SpotifyResponse {
   status: "ok" | "error";
   track: {

@@ -1,6 +1,7 @@
 import { Spotify } from "@styled-icons/boxicons-logos";
 import { SpotifyResponse } from "../types/spotify";
 import useSWR from "swr";
+import { truncate } from "../utils/truncate";
 
 export const SpotifyCard = () => {
   const { data }: { data?: SpotifyResponse } = useSWR("/track");
@@ -18,11 +19,12 @@ export const SpotifyCard = () => {
     <div className="flex flex-row mt-5 max-w-sm h-16 border border-gray-900 rounded-lg">
       <img
         src={trackImageUrl}
+        alt={trackData.name}
         className="ml-2 mr-3 mt-2 w-12 h-12 rounded-xl"
       />
       <div className="flex flex-col mt-2 w-72">
         <p className="text-gray-400 text-sm">{artists}</p>
-        <p className="font-bold text-2xl">{trackData.name}</p>
+        <p className="font-bold text-xl">{truncate(trackData.name, 25)}</p>
       </div>
       <Spotify className="flex-shrink-0 mt-2" color="#1DB954" size={20} />
     </div>
