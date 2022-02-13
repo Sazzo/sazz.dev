@@ -13,7 +13,7 @@ export const SpotifyCard = () => {
   if (!trackData) return null;
 
   return (
-    <div className="flex flex-row mt-5 max-w-sm h-16 border border-gray-900 rounded-lg">
+    <div className="flex flex-row mt-5 max-w-sm h-16 border border-gray-900 bg-black rounded-lg">
       <img
         src={trackData.album_art_url}
         alt={trackData.song}
