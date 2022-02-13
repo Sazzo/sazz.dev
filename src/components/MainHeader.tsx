@@ -5,16 +5,17 @@ import Image from "next/image";
 
 export const MainHeader = () => {
   return (
-    <header className="flex sm:grid grid-cols-1 sm:grid-cols-2 sm:grid-flow-row sm:gap-16 bg-black text-white h-screen">
-      <section className="flex flex-col justify-center items-center sm:justify-start sm:items-start sm:pl-28 sm:pt-30vh">
+    <header className="flex lg:grid grid-cols-1 lg:grid-cols-2 lg:grid-flow-row lg:gap-16 lg:bg-none text-white h-screen ">
+      <div className="w-screen h-screen absolute bg-flower-dark bg-center bg-cover blur-md lg:hidden" />
+      <section className="flex w-screen flex-col justify-center items-center lg:justify-start z-10 lg:items-start lg:pl-28 lg:pt-30vh">
         <Logo />
-        <p className="font-light text-2xl text-center sm:text-left mt-9">
+        <p className="font-light text-2xl text-center lg:text-left mt-9">
           Software Engineer and Backend Developer.
         </p>
         <SpotifyCard />
         <SocialList />
       </section>
-      <section className="hidden sm:inline">
+      <section className="hidden lg:inline">
         <img className="h-screen" src="/flowers_dark.jpg" />
       </section>
     </header>

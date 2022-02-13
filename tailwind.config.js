@@ -1,9 +1,8 @@
 module.exports = {
-  purge: [
+  content: [
     "./src/components/**/*.{js,ts,jsx,tsx}",
     "./src/pages/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       padding: {
@@ -13,6 +12,10 @@ module.exports = {
       },
       width: {
         94: "24rem",
+      },
+      backgroundImage: {
+        none: "none",
+        "flower-dark": "url('/flowers_dark.jpg')",
       },
     },
     fontFamily: {
