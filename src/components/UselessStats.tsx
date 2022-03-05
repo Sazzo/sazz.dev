@@ -3,7 +3,7 @@ import { BsCloudSunFill } from "react-icons/bs";
 
 export const UselessStats = () => {
   return (
-    <div className="flex flex-col text-">
+    <div className="flex flex-col ">
       <p>
         <BsCloudSunFill className="mr-2 inline-block align-middle" size={23} />{" "}
         I live in Salvador, Bahia and it&apos;s currently{" "}

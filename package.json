@@ -21,6 +21,7 @@
     "swr": "^1.0.1"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
     "@types/node": "16.11.6",
     "@types/react": "17.0.34",
     "autoprefixer": "^10.4.0",
