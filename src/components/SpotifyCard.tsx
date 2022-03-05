@@ -1,4 +1,4 @@
-import { Spotify } from "@styled-icons/boxicons-logos";
+import { SiSpotify } from "react-icons/si";
 import { useLanyard } from "react-use-lanyard";
 import { truncate } from "../utils/truncate";
 
@@ -23,7 +23,7 @@ export const SpotifyCard = () => {
         <p className="text-gray-400 text-sm">{trackData.artist}</p>
         <p className="font-bold text-xl">{truncate(trackData.song, 25)}</p>
       </div>
-      <Spotify className="mt-2 mr-1" color="#1DB954" size={20} />
+      <SiSpotify className="mt-2 mr-1" color="#1DB954" size={17} />
     </div>
   );
 };

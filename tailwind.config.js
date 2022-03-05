@@ -13,13 +13,17 @@ module.exports = {
       width: {
         94: "24rem",
       },
+      colors: {
+        "pinky-purple": "#E04A6A",
+      },
       backgroundImage: {
         none: "none",
-        "flower-dark": "url('/flowers_dark.jpg')",
+        "flower-dark": "url('/whitecat.jpg')",
       },
     },
     fontFamily: {
       sans: ["Overpass", "sans-serif"],
+      mono: ["Fira Code"],
     },
   },
   variants: {
