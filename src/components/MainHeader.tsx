@@ -1,9 +1,6 @@
 import { Logo } from "./Logo";
 import { SocialList } from "./SocialList";
 import { SpotifyCard } from "./SpotifyCard";
-import Image from "next/image";
-import { UselessStats } from "./UselessStats";
-import FadeIn from "react-fade-in";
 
 export const MainHeader = () => {
   return (
