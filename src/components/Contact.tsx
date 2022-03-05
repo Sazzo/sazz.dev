@@ -1,14 +1,11 @@
+import { SectionLayout } from "../layouts/SectionLayout";
 import { Link } from "./Link";
 
 const PGP_FINGERPRINT = "7A04 6632 CB21 38DB B3AC A6BE 5558 99D3 245B 13E5";
 
 export const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="flex flex-col text-lg text-white text-left pl-28 pb-8"
-    >
-      <h1 className="font-bold text-3xl mb-4">Other/Contact</h1>
+    <SectionLayout id="contact" title="Other/Contact">
       <ul className="list-disc pl-6 font-semibold">
         <li>
           Twitter: <Link to="https://twitter.com/FelipeSazz">@FelipeSazz</Link>
@@ -33,6 +30,6 @@ export const Contact = () => {
           <span className="font-mono font-medium">{PGP_FINGERPRINT}</span>
         </li>
       </ul>
-    </section>
+    </SectionLayout>
   );
 };
