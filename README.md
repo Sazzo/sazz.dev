@@ -2,7 +2,7 @@
 
 # sazz.space
 
-Hey! This is my website! It's not too much but it covers all my needs. Maybe in the future I make this even more useful.
+Hey! This is my website! It's not too much but it covers all my needs. Maybe in the future I can make this even more useful.
 
 ## Running
 
