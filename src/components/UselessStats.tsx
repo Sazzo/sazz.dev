@@ -3,12 +3,13 @@ import { BsCloudSunFill } from "react-icons/bs";
 import { WeatherResponse } from "../types/weather";
 import useSWR from "swr";
 import { AnilistResponse } from "../types/anilist";
+import { LoadingSpinner } from "./LoadingSpinner";
 
 export const UselessStats = () => {
   const weatherResponse = useSWR<WeatherResponse>("weather");
   const anilistResponse = useSWR<AnilistResponse>("anilist");
 
-  if (!weatherResponse.data || !anilistResponse.data) return null;
+  if (!weatherResponse.data || !anilistResponse.data) return <LoadingSpinner />;
 
   const temperature = weatherResponse.data.weather?.temp;
   const description = weatherResponse.data.weather?.description;
