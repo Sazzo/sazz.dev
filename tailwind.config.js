@@ -11,6 +11,9 @@ module.exports = {
         "35vh": "35vh",
         "40vh": "40vh",
       },
+      minHeight: {
+        16: "4rem",
+      },
       width: {
         94: "24rem",
       },
