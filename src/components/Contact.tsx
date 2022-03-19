@@ -16,7 +16,7 @@ export const Contact = () => {
         <li>
           Discord:{" "}
           <Link to="https://discord.com/users/326123612153053184">
-            sazz#3572
+            sazz#1000
           </Link>
         </li>
         <li>
