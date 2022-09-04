@@ -8,7 +8,7 @@ export const MainHeader = () => {
       <section className="flex w-screen flex-col justify-center items-center lg:w-max lg:justify-start lg:items-start lg:pl-28 lg:pt-30vh">
         <Logo />
         <p className="font-light text-2xl text-center lg:text-left mt-9">
-          Software Engineer and Backend Developer.
+          Software and Backend Developer.
         </p>
         <SpotifyCard />
         <SocialList />

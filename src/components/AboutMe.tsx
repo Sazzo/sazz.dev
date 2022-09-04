@@ -5,7 +5,7 @@ import { UselessStats } from "./UselessStats";
 export const AboutMe = () => {
   return (
     <SectionLayout id="about" title="Hi, I'm sazz.">
-      <p>A software engineer, backend developer and weeb from Brazil.</p>
+      <p>A software and backend developer from Brazil.</p>
       <p>
         I like backend development, and consider myself pretty much proficient
         in <span className="font-semibold">TS/JS</span>, specially on
