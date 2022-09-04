@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           locale: "en_US",
           images: [
             {
-              url: "https://sazz.space/avatar.jpg",
+              url: "https://sazz.dev/avatar.jpg",
               width: 460,
               height: 460,
               alt: "Avatar",
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         twitter={{
           cardType: "summary",
           handle: "FelipeSazz",
-          site: "sazz.space",
+          site: "sazz.dev",
         }}
       />
       <Head>

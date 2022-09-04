@@ -23,7 +23,7 @@ export const Contact = () => {
           Keybase: <Link to="https://keybase.io/sazz">keybase.io/sazz</Link>
         </li>
         <li>
-          Email: <Link to="mailto:hello@sazz.space">hello@sazz.space</Link>
+          Email: <Link to="mailto:felipe@sazz.dev">felipe@sazz.dev</Link>
         </li>
         <li>
           PGP Fingerprint:{" "}

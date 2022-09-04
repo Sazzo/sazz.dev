@@ -10,7 +10,7 @@ export const SocialList = () => {
       <a href="https://github.com/Sazzo">
         <SiGithub size={30} />
       </a>
-      <a href="mailto:hello@sazz.space">
+      <a href="mailto:felipe@sazz.dev">
         <MdEmail size={30} />
       </a>
     </div>
