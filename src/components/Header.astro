@@ -1,0 +1,36 @@
+---
+import Logo from "./ui/Logo.svelte";
+import SpotifyCard from "./ui/SpotifyCard.svelte";
+import GithubIcon from "./ui/icons/GithubIcon.svelte";
+import MenuIcon from "./ui/icons/MenuIcon.svelte";
+import TwitterIcon from "./ui/icons/TwitterIcon.svelte";
+---
+
+<button><MenuIcon class="fixed m-8 w-6 h-6" /></button>
+<header
+  class="flex lg:grid grid-cols-1 lg:grid-cols-2 lg:grid-flow-row lg:gap-20"
+>
+  <section
+    class="flex flex-col justify-center items-center lg:w-max lg:justify-start lg:items-start lg:pl-28 lg:pt-[30vh]"
+  >
+    <Logo />
+
+    <p class="font-light text-2xl text-center lg:text-left mt-9">
+      Software Engineer and Backend Developer.
+    </p>
+
+    <div class="flex flex-row w-20 mt-9 justify-between">
+      <a href="https://twitter.com/FelipeSazz">
+        <TwitterIcon class="w-7 h-7" />
+      </a>
+      <a href="https://github.com/Sazzo">
+        <GithubIcon class="w-7 h-7" />
+      </a>
+    </div>
+  </section>
+  <section class="flex h-screen items-center justify-center">
+    <img src="spacestation.jpg" />
+  </section>
+</header>
+
+<SpotifyCard client:only="svelte" />
