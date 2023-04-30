@@ -1,0 +1,39 @@
+---
+import CenterSectionLayout from "../layouts/CenterSectionLayout.astro";
+import TechnologyIcon from "./ui/icons/TechnologyIcon.svelte";
+
+import languages from "../data/languages.json";
+console.log(languages);
+---
+
+<CenterSectionLayout id="tech" title="Most used technologies">
+  <p class="text-xl">
+    I love bleeding-edge technologies and frameworks! Keep in mind that this
+    list is not exhaustive, as I am always tinkering with different tools.
+  </p>
+
+  <div class="flex justify-center items-center pt-5">
+    <div class="grid lg:grid-cols-2 gap-5 w-[63%]">
+      {
+        languages.map((language) => (
+          <div class="flex flex-row border-[#2B2B2B] border-2 h-[124px] w-[525px] rounded-xl">
+            <div
+              style={`background-color: ${language.backgroundColor}`}
+              class="flex justify-center items-center w-24 h-auto border-r-2 border-[#2B2B2B] rounded-l-xl"
+            >
+              <TechnologyIcon
+                technology={language.icon}
+                className=" w-16 h-16"
+              />
+            </div>
+
+            <div class="flex flex-col justify-center text-left pl-5 pt-5">
+              <h1 class="font-bold text-2xl">{language.name}</h1>
+              <p class="pt-1 font-light">{language.description}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</CenterSectionLayout>
