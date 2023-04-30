@@ -9,7 +9,7 @@
   let currentPageIndex: number = 0;
 </script>
 
-<div class=" w-[75rem] h-[520px]">
+<div class="w-[75rem] h-[520px]">
   <div class="flex flex-row justify-center">
     <div class="flex items-center mr-5">
       <button
