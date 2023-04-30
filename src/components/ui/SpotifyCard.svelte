@@ -23,7 +23,7 @@
       </div>
     {:else}
       <div
-        class="flex flex-row max-w-sm h-16 border border-gray-800 rounded-lg"
+        class="flex flex-row max-w-sm min-h-[4rem] border border-gray-800 rounded-lg"
         in:fade
       >
         <img
