@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Ritsu",
+    "description": [
+      "A Discord Bot based on the AnimeMusicQuiz (AMQ) game, play using your MAL/Anilist animelist and with different game modes!",
+      "Built in 2020 as a toy project with some friends, shutdown and archived in 2021. Grew up to 1,000+ Discord servers. I made a lot of architecture mistakes and also learned a bunch of things while making this."
+    ],
+    "banner": "projects/ritsu.png",
+    "technologies": ["node", "typescript", "docker", "gh-actions", "mongodb"],
+    "color": "#FF3860",
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/RitsuProject"
+      }
+    ]
+  },
+  {
+    "name": "sazztv",
+    "description": [
+      "Live streaming video platform inspired by Twitch. Developed using Golang with the Echo framework for the backend and Sveltekit for the frontend.",
+      "The RTMP protocol was used for video streaming, ensuring compatibility with streaming programs like OBS Studio."
+    ],
+    "technologies": ["golang", "sveltekit", "docker", "gh-actions"],
+    "color": "white",
+    "fontColor": "black",
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/Sazzo/sazztv"
+      }
+    ]
+  },
+  {
+    "name": "nazuna",
+    "description": [
+      "CLI tool to download Twitter videos using the terminal.",
+      "Developed with Rust, using Github Actions to automatically compile the executables for each supported platform (MacOS, Windows and Linux) every time there was a new release."
+    ],
+    "technologies": ["rust", "gh-actions"],
+    "color": "#1DA1F2",
+    "links": [
+      {
+        "name": "Github",
+        "url": "https://github.com/Sazzo/nazuna"
+      }
+    ]
+  }
+]
