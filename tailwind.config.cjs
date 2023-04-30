@@ -3,8 +3,14 @@ module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
-      fontFamily: ["Overpass", "sans-serif"],
+      fontFamily: {
+        syne: ["Syne", "sans-serif"],
+      },
+    },
+
+    fontFamily: {
+      sans: ["Overpass", "sans-serif"],
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
