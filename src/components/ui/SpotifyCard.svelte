@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { fade, fly } from "svelte/transition";
+  import { fade } from "svelte/transition";
   import { subscribeToLanyard } from "../../utils/lanyard";
   import { truncate } from "../../utils/truncate";
   import SpotifyIcon from "./icons/SpotifyIcon.svelte";
 
   const lanyardData = subscribeToLanyard("326123612153053184");
-  console.log($lanyardData);
+
   let showSpotifyData = false;
 </script>
 
