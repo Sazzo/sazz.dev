@@ -53,7 +53,7 @@
             </h1>
 
             {#each project.description as description}
-              <p class="text-base md:text-lg">{description}</p>
+              <p class="text-base mb-4 md:text-lg">{description}</p>
             {/each}
 
             <h3 class="font-bold text-xl pt-5">Technologies</h3>
