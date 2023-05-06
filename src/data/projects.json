@@ -38,6 +38,7 @@
       "Developed with Rust, using Github Actions to automatically compile the executables for each supported platform (MacOS, Windows and Linux) every time there was a new release."
     ],
     "technologies": ["rust", "gh-actions"],
+    "banner": "projects/nazuna.png",
     "color": "#1DA1F2",
     "links": [
       {
