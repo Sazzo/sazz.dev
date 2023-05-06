@@ -17,10 +17,10 @@ import languages from "../data/tech.json";
     >
       {
         languages.map((language) => (
-          <div class="flex flex-col lg:flex-row border-[#2B2B2B] border-2 min-h-[124px] w-[525px] rounded-xl">
+          <div class="flex flex-col lg:flex-row border-[#2B2B2B] border-2 min-h-[124px] min-w-full rounded-xl">
             <div
               style={`background-color: ${language.backgroundColor}`}
-              class="flex justify-center items-center min-w-full lg:w-24 h-auto lg:border-r-2 border-[#2B2B2B] rounded-t-xl lg:rounded-r-none lg:rounded-l-xl"
+              class="flex justify-center items-center w-full lg:w-24 h-auto lg:border-r-2 border-[#2B2B2B] rounded-t-xl lg:rounded-r-none lg:rounded-l-xl"
             >
               <TechnologyIcon
                 technology={language.icon}
@@ -28,7 +28,7 @@ import languages from "../data/tech.json";
               />
             </div>
 
-            <div class="flex flex-col justify-center text-left pl-5 pt-5">
+            <div class="flex flex-col justify-center text-left pl-5 pt-5 pr-5">
               <h1 class="font-bold text-2xl">{language.name}</h1>
               <p class="pt-1 font-light">{language.description}</p>
             </div>
