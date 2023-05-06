@@ -11,14 +11,14 @@
 
 <div class="w-[22rem] lg:w-[75rem] lg:h-[520px]">
   <div class="flex flex-row justify-center">
-    <div class="flex items-center mr-5">
+    <div class="hidden lg:flex items-center mr-5">
       <!-- todo: possibly make a separate component for these buttons -->
       <button
         on:click={() => carousel.goToPrev()}
-        class="bg-white w-7 h-7 lg:w-10 lg:h-10 rounded-full flex items-center justify-center"
+        class="flex items-center justify-center bg-white w-7 h-7 rounded-full"
       >
         <svg
-          class="w-4 h-4 lg:w-6 lg:h-6 text-black"
+          class="w-6 h-6 text-black"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -97,13 +97,13 @@
     </Carousel>
 
     <!-- todo: possibly make a separate component for these buttons -->
-    <div class="flex items-center ml-5">
+    <div class="hidden lg:flex items-center ml-5">
       <button
         on:click={() => carousel.goToNext()}
-        class="bg-white w-7 h-7 lg:w-10 lg:h-10 rounded-full flex items-center justify-center"
+        class="flex items-center justify-center bg-white w-7 h-7 lg:w-10 lg:h-10 rounded-full"
       >
         <svg
-          class="w-4 h-4 lg:w-6 lg:h-6 text-black"
+          class="w-6 h-6 text-black"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
