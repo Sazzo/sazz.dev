@@ -9,9 +9,9 @@
   let currentPageIndex: number = 0;
 </script>
 
-<div class="w-[22rem] lg:w-[75rem] lg:h-[520px]">
+<div class="w-[22rem] md:w-[75rem] md:h-[520px]">
   <div class="flex flex-row justify-center">
-    <div class="hidden lg:flex items-center mr-5">
+    <div class="hidden md:flex items-center mr-5">
       <!-- todo: possibly make a separate component for these buttons -->
       <button
         on:click={() => carousel.goToPrev()}
@@ -48,12 +48,12 @@
           class="flex flex-row rounded-3xl h-[520px] text-left"
         >
           <div class="p-8">
-            <h1 class="font-syne font-bold text-4xl lg:text-5xl pb-5">
+            <h1 class="font-syne font-bold text-4xl md:text-5xl pb-5">
               {project.name}
             </h1>
 
             {#each project.description as description}
-              <p class="text-base lg:text-lg">{description}</p>
+              <p class="text-base md:text-lg">{description}</p>
             {/each}
 
             <h3 class="font-bold text-xl pt-5">Technologies</h3>
@@ -86,7 +86,7 @@
           {#if project.banner}
             <div>
               <img
-                class="hidden lg:inline lg:w-[41rem] lg:h-full"
+                class="hidden md:inline md:w-[41rem] md:h-full"
                 src={project.banner}
                 alt={project.name}
               />
@@ -97,10 +97,10 @@
     </Carousel>
 
     <!-- todo: possibly make a separate component for these buttons -->
-    <div class="hidden lg:flex items-center ml-5">
+    <div class="hidden md:flex items-center ml-5">
       <button
         on:click={() => carousel.goToNext()}
-        class="flex items-center justify-center bg-white w-7 h-7 lg:w-10 lg:h-10 rounded-full"
+        class="flex items-center justify-center bg-white w-7 h-7 md:w-10 md:h-10 rounded-full"
       >
         <svg
           class="w-6 h-6 text-black"
