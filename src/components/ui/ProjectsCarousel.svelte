@@ -9,7 +9,7 @@
   let currentPageIndex: number = 0;
 </script>
 
-<div class="w-[22rem] md:w-[75rem] md:h-[520px]">
+<div class="w-[22rem] md:w-[70rem] md:h-[520px]">
   <div class="flex flex-row justify-center">
     <div class="hidden md:flex items-center mr-5">
       <!-- todo: possibly make a separate component for these buttons -->
@@ -86,8 +86,8 @@
           {#if project.banner}
             <div>
               <img
-                class="hidden md:inline md:w-[41rem] md:h-full md:rounded-r-3xl"
                 src={project.banner}
+                class="hidden object-cover md:w-[30rem] md:inline md:h-full md:rounded-r-3xl"
                 alt={project.name}
               />
             </div>
