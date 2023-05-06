@@ -15,7 +15,7 @@
       <!-- todo: possibly make a separate component for these buttons -->
       <button
         on:click={() => carousel.goToPrev()}
-        class="flex items-center justify-center bg-white w-7 h-7 rounded-full"
+        class="flex items-center justify-center bg-white w-10 h-10 rounded-full"
       >
         <svg
           class="w-6 h-6 text-black"
@@ -100,7 +100,7 @@
     <div class="hidden md:flex items-center ml-5">
       <button
         on:click={() => carousel.goToNext()}
-        class="flex items-center justify-center bg-white w-7 h-7 md:w-10 md:h-10 rounded-full"
+        class="flex items-center justify-center bg-white w-10 h-10 rounded-full"
       >
         <svg
           class="w-6 h-6 text-black"
