@@ -9,7 +9,7 @@
   let currentPageIndex: number = 0;
 </script>
 
-<div class="w-[75rem] h-[520px]">
+<div class="w-[22rem] lg:w-[75rem] lg:h-[520px]">
   <div class="flex flex-row justify-center">
     <div class="flex items-center mr-5">
       <button
@@ -47,10 +47,12 @@
           class="flex flex-row rounded-3xl h-[520px] text-left"
         >
           <div class="p-8">
-            <h1 class="font-syne font-bold text-5xl pb-5">{project.name}</h1>
+            <h1 class="font-syne font-bold text-4xl lg:text-5xl pb-5">
+              {project.name}
+            </h1>
 
             {#each project.description as description}
-              <p>{description}</p>
+              <p class="text-base">{description}</p>
             {/each}
 
             <h3 class="font-bold text-xl pt-5">Technologies</h3>
@@ -83,7 +85,7 @@
           {#if project.banner}
             <div>
               <img
-                class="w-[41rem] h-full"
+                class="hidden lg:inline lg:w-[41rem] lg:h-full"
                 src={project.banner}
                 alt={project.name}
               />

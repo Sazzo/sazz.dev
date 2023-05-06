@@ -17,14 +17,14 @@ import languages from "../data/tech.json";
     >
       {
         languages.map((language) => (
-          <div class="flex flex-row border-[#2B2B2B] border-2 h-[124px] w-[525px] rounded-xl">
+          <div class="flex flex-col lg:flex-row border-[#2B2B2B] border-2 min-h-[124px] w-[525px] rounded-xl">
             <div
               style={`background-color: ${language.backgroundColor}`}
-              class="flex justify-center items-center w-24 h-auto border-r-2 border-[#2B2B2B] rounded-l-xl"
+              class="flex justify-center items-center min-w-full lg:w-24 h-auto lg:border-r-2 border-[#2B2B2B] rounded-t-xl lg:rounded-r-none lg:rounded-l-xl"
             >
               <TechnologyIcon
                 technology={language.icon}
-                className=" w-16 h-16"
+                className=" w-16 h-24 lg:h-16"
               />
             </div>
 
