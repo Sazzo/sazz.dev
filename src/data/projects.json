@@ -24,6 +24,7 @@
     "technologies": ["golang", "sveltekit", "docker", "gh-actions"],
     "color": "white",
     "fontColor": "black",
+    "banner": "projects/sazztv.png",
     "links": [
       {
         "name": "Github",
