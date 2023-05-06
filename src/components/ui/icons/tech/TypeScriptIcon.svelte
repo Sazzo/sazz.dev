@@ -5,6 +5,7 @@
   width="2500"
   height="2500"
 >
+  <title>TypeScript</title>
   <path fill="#007acc" d="M0 200V0h400v400H0" />
   <path
     fill="#fff"

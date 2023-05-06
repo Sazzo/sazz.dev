@@ -58,7 +58,10 @@
               {#each project.technologies as technology}
                 <TechnologyIcon
                   {technology}
-                  className="w-6 h-6 mr-1 rounded-sm"
+                  style={project.fontColor
+                    ? `fill: ${project.fontColor};`
+                    : "fill: white;"}
+                  className="w-6 h-6 mr-2 rounded-sm"
                 />
               {/each}
             </div>
