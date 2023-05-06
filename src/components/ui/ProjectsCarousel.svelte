@@ -86,7 +86,7 @@
           {#if project.banner}
             <div>
               <img
-                class="hidden md:inline md:w-[41rem] md:h-full"
+                class="hidden md:inline md:w-[41rem] md:h-full md:rounded-r-3xl"
                 src={project.banner}
                 alt={project.name}
               />
