@@ -1,1 +1,1 @@
-<div class="w-screen h-2 bg-white" />
+<div class="w-full h-2 bg-white" />
