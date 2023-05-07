@@ -1,6 +1,7 @@
 ---
 import Logo from "./ui/Logo.svelte";
 import SpotifyCard from "./ui/SpotifyCard.svelte";
+import EmailIcon from "./ui/icons/EmailIcon.svelte";
 import GithubIcon from "./ui/icons/GithubIcon.svelte";
 import TwitterIcon from "./ui/icons/TwitterIcon.svelte";
 ---
@@ -17,12 +18,15 @@ import TwitterIcon from "./ui/icons/TwitterIcon.svelte";
       Software Engineer and Backend Developer.
     </p>
 
-    <div class="flex flex-row w-20 mt-9 justify-between">
+    <div class="flex flex-row mt-9 gap-5">
       <a href="https://twitter.com/FelipeSazz">
         <TwitterIcon class="w-7 h-7" />
       </a>
       <a href="https://github.com/Sazzo">
         <GithubIcon class="w-7 h-7" />
+      </a>
+      <a href="mailto:felipe@sazz.dev">
+        <EmailIcon class="w-7 h-7" />
       </a>
     </div>
   </section>
