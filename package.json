@@ -17,6 +17,7 @@
     "@fontsource/overpass": "^4.5.11",
     "@fontsource/syne": "^4.5.13",
     "astro": "^2.3.2",
+    "astro-seo": "^0.7.2",
     "svelte": "^3.54.0",
     "svelte-carousel": "^1.0.25",
     "tailwindcss": "^3.0.24"
