@@ -1,5 +1,6 @@
 ---
 import TopBar from "../components/ui/TopBar.svelte";
+import Menu from "../components/ui/Menu.svelte";
 
 // for some reason, when importing the index css, only the 400 font weight is loaded
 import "@fontsource/overpass/200.css";
@@ -25,6 +26,8 @@ import "@fontsource/syne/700.css";
   </head>
   <body class="flex flex-col bg-black text-white">
     <TopBar />
+    <Menu client:load />
+
     <slot />
   </body>
 </html>
