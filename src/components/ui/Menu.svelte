@@ -7,7 +7,7 @@
 </script>
 
 <button on:click={() => (showMenu = !showMenu)}
-  ><MenuIcon class="fixed m-8 w-6 h-6" /></button
+  ><MenuIcon class="fixed m-8 w-6 h-6 z-10" /></button
 >
 
 {#if showMenu}
