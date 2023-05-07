@@ -7,14 +7,14 @@ import TwitterIcon from "./ui/icons/TwitterIcon.svelte";
 ---
 
 <header
-  class="flex md:grid grid-cols-1 md:grid-cols-2 md:grid-flow-row md:gap-20 h-screen"
+  class="flex grid-cols-1 h-screen md:grid md:grid-cols-2 md:grid-flow-row md:gap-20"
 >
   <section
     class="flex flex-col justify-center items-center w-screen md:w-max md:justify-start md:items-start md:pl-28 md:pt-[30vh]"
   >
     <Logo />
 
-    <p class="font-light text-2xl text-center md:text-left mt-9">
+    <p class="font-light text-2xl text-center mt-9 md:text-left">
       Software Engineer and Backend Developer.
     </p>
 
@@ -30,8 +30,8 @@ import TwitterIcon from "./ui/icons/TwitterIcon.svelte";
       </a>
     </div>
   </section>
-  <section class="md:flex h-screen items-center justify-center hidden">
-    <img src="spacestation.jpg" />
+  <section class="h-screen items-center justify-center hidden md:flex">
+    <img class="pointer-events-none" src="spacestation.jpg" />
   </section>
 </header>
 
