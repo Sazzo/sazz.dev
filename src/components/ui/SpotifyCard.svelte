@@ -11,7 +11,7 @@
 
 {#if $lanyardData && $lanyardData.listening_to_spotify}
   <div
-    class="absolute bottom-8 right-8 bg-black"
+    class="absolute bottom-8 right-4 bg-black md:right-8"
     on:mouseover={() => (showSpotifyData = true)}
     on:focus={() => (showSpotifyData = true)}
     on:blur={() => (showSpotifyData = false)}
