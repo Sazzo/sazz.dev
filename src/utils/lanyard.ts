@@ -1,7 +1,9 @@
-import { readable } from "svelte/store";
+import { readable, writable } from "svelte/store";
 import { LanyardData, LanyardPayload } from "../types/lanyard";
 
 const WS_HEARTBEAT_INTERVAL = 30000;
+
+export const lanyardStore = writable<LanyardData>(null);
 
 export function subscribeToLanyard(id: string) {
   return readable<LanyardData>(null, (set) => {
@@ -31,6 +33,8 @@ export function subscribeToLanyard(id: string) {
 
       if (data.t === "INIT_STATE" || data.t === "PRESENCE_UPDATE") {
         set(data.d);
+
+        lanyardStore.set(data.d);
       }
     });
   });

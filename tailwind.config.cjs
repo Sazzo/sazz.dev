@@ -10,6 +10,7 @@ module.exports = {
 
     fontFamily: {
       sans: ["Overpass", "sans-serif"],
+      mono: ["Fira Code"],
     },
   },
   plugins: [require("@tailwindcss/typography")],

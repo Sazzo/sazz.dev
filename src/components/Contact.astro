@@ -1,0 +1,53 @@
+---
+import SectionLayout from "../layouts/SectionLayout.astro";
+import DiscordUser from "./ui/DiscordUser.svelte";
+import Link from "./ui/Link.svelte";
+
+const PGP_FINGERPRINT = "7A04 6632 CB21 38DB B3AC A6BE 5558 99D3 245B 13E5";
+---
+
+<SectionLayout id="contact" title="Contact & Jobs">
+  <p>
+    Thanks for the visit! I hope you enjoyed it. If you want to take a peek at
+    the source code of this website, you can do so at
+    <Link to="https://github.com/Sazzo/sazz.dev">Sazzo/sazz.dev</Link>.
+  </p>
+
+  <h2 class="font-bold text-2xl mb-4">Talk to me!</h2>
+  <ul class="list-disc pl-6 text-lg mb-4">
+    <li>Email: <Link to="mailto:felipe@sazz.dev">felipe@sazz.dev</Link></li>
+    <li>
+      Twitter: <Link to="https://twitter.com/FelipeSazz">@FelipeSazz</Link>
+    </li>
+    <li>Github: <Link to="https://github.com/Sazzo">@FelipeSazz</Link></li>
+    <li>
+      LinkedIn: <Link to="https://www.linkedin.com/in/felipesazz/">
+        linkedin.com/in/felipesazz
+      </Link>
+    </li>
+    <li>
+      Discord: <Link to="https://discord.com/users/326123612153053184">
+        <DiscordUser client:load />
+      </Link>
+    </li>
+    <li>
+      PGP Fingerprint:
+      <span class="font-mono font-medium">{PGP_FINGERPRINT}</span>
+    </li>
+  </ul>
+
+  <h2 class="font-bold text-2xl mb-4">Jobs/Work</h2>
+  <p>
+    I'm a freelancer! If you enjoyed what you saw here, and wants a website,
+    discord bot, or other services. Feel free to contact me using my email or
+    sending a DM on Discord. You can find more information at <Link
+      to="https://jobs.sazz.dev"
+    >
+      jobs.sazz.dev
+    </Link>
+  </p>
+  <p>
+    Also, I'm looking for apprenticeship/"jovem aprendiz" (in portuguese)
+    opportunities. Feel free to contact me at LinkedIn or email.
+  </p>
+</SectionLayout>

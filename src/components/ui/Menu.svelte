@@ -31,7 +31,7 @@
       <a href="#whoami">Who am I</a>
       <a href="#featured">Open-source Projects</a>
       <a href="#tech">Most Used Tech</a>
-      <a href="#hire">Hire me!</a>
+      <a href="#contact">Contact & Jobs</a>
     </div>
   </div>
 {/if}
