@@ -3,8 +3,7 @@
 </script>
 
 {#if $lanyardStore}
-  {$lanyardStore.discord_user.username}#{$lanyardStore.discord_user
-    .discriminator}
+  @{$lanyardStore.discord_user.username}
 {:else}
   ...whoa..i'm fetching the data!
 {/if}
