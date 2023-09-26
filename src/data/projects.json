@@ -1,5 +1,22 @@
 [
   {
+    "name": "ONU Colegial",
+    "description": [
+      "One of Brazil's largest United Nations simulations, it is an annual event with more than 200 participants and is organized by the students (and former students) of Colégio Antônio Vieira.",
+      "In 2022, I was a member of the team that helped with the organization and logistics of the event. In 2023, I became director of this same team and developed the check-in platform that allowed all participants to be accredited by the staff before the opening ceremony."
+    ],
+    "banner": "projects/onucolegial.png",
+    "technologies": ["node", "typescript", "sveltekit", "docker", "gh-actions"],
+    "color": "white",
+    "fontColor": "black",
+    "links": [
+      {
+        "name": "Instagram",
+        "url": "https://instagram.com/onucolegial"
+      }
+    ]
+  },
+  {
     "name": "Ritsu",
     "description": [
       "A Discord Bot based on the AnimeMusicQuiz (AMQ) game, play using your MAL/Anilist animelist and with different game modes!",
@@ -8,6 +25,7 @@
     "banner": "projects/ritsu.png",
     "technologies": ["node", "typescript", "docker", "gh-actions", "mongodb"],
     "color": "#FF3860",
+    "fontColor": "white",
     "links": [
       {
         "name": "Github",

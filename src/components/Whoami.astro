@@ -1,24 +1,28 @@
 ---
 import SectionLayout from "../layouts/SectionLayout.astro";
+import Link from "./ui/Link.svelte";
 ---
 
 <div class="flex flex-row gap-28">
-  <SectionLayout id="whoami" title="Felipe Garcia (a.k.a sazz)">
+  <SectionLayout id="whoami" title="Hi, I'm Felipe.">
     <p>
-      I’m a web developer from Salvador, Brazil. I had my first contact with
-      programming when I was 8, but only really got into coding when I was 10.
-      Nowadays, I'm a fast learner and proficient in TypeScript and JavaScript,
-      focusing on backend development.
+      A software developer & high schooler from Salvador, Brazil. I had my first
+      contact with programming when I was 8, but only really got into coding
+      when I was 10. I'm also a music junkie, crazy about all types of genres.
+      In my free time, I love to watch some movies and series!
     </p>
     <p>
-      I've always been passionate about creating original and creative personal
-      projects, which led me to develop several skills over the years. Also, I
-      have always enjoyed participating in communities and projects with other
-      people.
+      I've always been passionate about innovation, I created original and
+      creative personal projects, which led me to develop several skills over
+      the years. Professionally, I worked with clients like <Link
+        to="https://www.youtube.com/channel/UC-yA8YhrAgpFp4aVHRaNyMA"
+      >
+        Core das Antigas
+      </Link> and many others.
     </p>
 
     <p>
-      I am interested in highly scalable technologies, DevOps, InfoSec, and
+      Interested in highly scalable technologies, DevOps, InfoSec, and
       entrepreneurship.
     </p>
   </SectionLayout>

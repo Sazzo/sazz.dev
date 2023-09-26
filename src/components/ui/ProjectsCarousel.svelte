@@ -9,7 +9,7 @@
   let currentPageIndex: number = 0;
 </script>
 
-<div class="w-[22rem] md:w-[70rem] md:h-[520px]">
+<div class="w-[22rem] md:w-[70rem] md:h-[590px]">
   <div class="flex flex-row justify-center">
     <div class="hidden md:flex items-center mr-5">
       <!-- todo: possibly make a separate component for these buttons -->
@@ -45,9 +45,9 @@
           style="background-color: {project.color}; {project.fontColor
             ? `color: ${project.fontColor};`
             : ''}"
-          class="flex flex-row rounded-3xl h-[520px] text-left"
+          class="flex flex-row rounded-3xl h-[590px] text-left"
         >
-          <div class="p-8">
+          <div class="p-8 max-w-[800px]">
             <h1 class="font-syne font-bold text-4xl md:text-5xl pb-5">
               {project.name}
             </h1>
@@ -64,7 +64,7 @@
                   style={project.fontColor
                     ? `fill: ${project.fontColor};`
                     : "fill: white;"}
-                  className="w-6 h-6 mr-2 rounded-sm"
+                  className="w-6 h-6 mr-2"
                 />
               {/each}
             </div>
