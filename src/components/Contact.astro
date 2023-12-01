@@ -3,7 +3,7 @@ import SectionLayout from "../layouts/SectionLayout.astro";
 import DiscordUser from "./ui/DiscordUser.svelte";
 import Link from "./ui/Link.svelte";
 
-const PGP_FINGERPRINT = "7A04 6632 CB21 38DB B3AC A6BE 5558 99D3 245B 13E5";
+const PGP_FINGERPRINT = "7B8B 736D 9D63 0974 144C 36B5 350E AC57 2CD9 4A60";
 ---
 
 <SectionLayout id="contact" title="Contact & Jobs">
@@ -32,7 +32,9 @@ const PGP_FINGERPRINT = "7A04 6632 CB21 38DB B3AC A6BE 5558 99D3 245B 13E5";
     </li>
     <li>
       PGP Fingerprint:
-      <span class="font-mono font-medium">{PGP_FINGERPRINT}</span>
+      <a href="key.pub"
+        ><span class="font-mono font-medium">{PGP_FINGERPRINT}</span></a
+      >
     </li>
   </ul>
 
