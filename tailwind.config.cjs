@@ -9,7 +9,8 @@ module.exports = {
     },
 
     fontFamily: {
-      sans: ["Overpass", "sans-serif"],
+      sans: ["Satoshi", "sans-serif"],
+      secondary: ["Sentient", "sans-serif"],
       mono: ["Fira Code"],
     },
   },

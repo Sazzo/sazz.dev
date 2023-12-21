@@ -1,39 +1,17 @@
 ---
-import Logo from "./ui/Logo.svelte";
-import SpotifyCard from "./ui/SpotifyCard.svelte";
-import EmailIcon from "./ui/icons/EmailIcon.svelte";
-import GithubIcon from "./ui/icons/GithubIcon.svelte";
-import TwitterIcon from "./ui/icons/TwitterIcon.svelte";
+
 ---
 
 <header
-  class="flex grid-cols-1 h-screen md:grid md:grid-cols-2 md:grid-flow-row md:gap-20"
+  class="bg-gradient-to-r from-black to-neutral-900/50 flex grid-cols-1 h-screen md:grid md:grid-cols-2 md:grid-flow-row md:gap-20"
 >
   <section
-    class="flex flex-col justify-center items-center w-screen md:w-max md:justify-start md:items-start md:pl-28 md:pt-[30vh]"
+    class="flex flex-col gap-5 justify-center items-center w-screen px-5 md:w-max md:items-start md:pl-14"
   >
-    <Logo />
-
-    <span class="font-extralight mt-5">(a.k.a Felipe Garcia)</span>
-    <p class="font-normal text-2xl text-center mt-5 md:text-left">
-      Software Engineer and Backend Developer.
-    </p>
-
-    <div class="flex flex-row mt-9 gap-5">
-      <a href="https://twitter.com/FelipeSazz">
-        <TwitterIcon class="w-7 h-7" />
-      </a>
-      <a href="https://github.com/Sazzo">
-        <GithubIcon class="w-7 h-7" />
-      </a>
-      <a href="mailto:felipe@sazz.dev">
-        <EmailIcon class="w-7 h-7" />
-      </a>
-    </div>
+    <div class="font-bold text-6xl md:text-8xl"><h1>Hi.</h1> <h1>I'm Felipe.</h1></div>
+    <p class="text-center md:text-2xl">A software developer and high schooler from Salvador, Brazil.</p>
   </section>
-  <section class="h-screen items-center justify-center hidden md:flex">
-    <img class="pointer-events-none" src="spacestation.jpg" />
+  <section class="h-screen items-center justify-center hidden md:flex md:pt-24">
+    <img class="pointer-events-none w-3/4" src="macintosh.png" alt="A Apple Computer Macintosh">
   </section>
 </header>
-
-<SpotifyCard client:only="svelte" />

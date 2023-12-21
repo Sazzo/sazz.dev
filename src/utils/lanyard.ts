@@ -1,5 +1,5 @@
 import { readable, writable } from "svelte/store";
-import { LanyardData, LanyardPayload } from "../types/lanyard";
+import type { LanyardData, LanyardPayload } from "../types/lanyard";
 
 const WS_HEARTBEAT_INTERVAL = 30000;
 
