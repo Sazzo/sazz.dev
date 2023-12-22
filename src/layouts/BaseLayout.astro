@@ -1,6 +1,6 @@
 ---
 import "@fontsource/fira-code/500.css";
-import "../base.css"
+import "../base.css";
 
 import Navbar from "../components/ui/Navbar.svelte";
 
@@ -11,13 +11,26 @@ interface Props {
 const { pageTitle } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="robots" content="index,follow" />
+    <link
+      rel="preload"
+      href="/fonts/Satoshi-Variable.ttf"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/Sentient-Variable.ttf"
+      as="font"
+      crossorigin
+    />
+
     <meta
       name="description"
       content="Software Engineer and Backend Developer."
@@ -37,7 +50,7 @@ const { pageTitle } = Astro.props;
   </head>
   <body class="flex flex-col bg-black text-white">
     <Navbar client:only />
-    
+
     <slot />
   </body>
 </html>
