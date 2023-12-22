@@ -30,7 +30,7 @@
 <nav class="flex font-secondary fixed w-screen h-auto">
   <button
     on:click={() => (isHambugerMenuOpen = !isHambugerMenuOpen)}
-    class="flex gap-2 pt-8 font-sans lg:hidden px-6 font-medium z-40"
+    class="flex gap-2 pt-8 font-sans lg:hidden px-5 font-medium z-40"
   >
     {#if isHambugerMenuOpen}
       <svg

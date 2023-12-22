@@ -3,6 +3,12 @@ import "@fontsource/fira-code/500.css";
 import "../base.css"
 
 import Navbar from "../components/ui/Navbar.svelte";
+
+interface Props {
+  pageTitle: string;
+}
+
+const { pageTitle } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -27,11 +33,11 @@ import Navbar from "../components/ui/Navbar.svelte";
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="en_US" />
     <meta name="theme-color" content="#306FBD" />
-    <title>sazz</title>
+    <title>FS. - {pageTitle}</title>
   </head>
   <body class="flex flex-col bg-black text-white">
     <Navbar client:only />
-
+    
     <slot />
   </body>
 </html>

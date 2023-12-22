@@ -6,6 +6,10 @@ module.exports = {
       fontFamily: {
         syne: ["Syne", "sans-serif"],
       },
+
+      padding: {
+        nav: "8rem",
+      },
     },
 
     fontFamily: {
