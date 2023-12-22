@@ -1,5 +1,10 @@
 {
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "prettier.documentSelectors": ["**/*.astro"],
+  "prettier.configPath": "./.prettierrc.mjs",
+  "[astro]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
