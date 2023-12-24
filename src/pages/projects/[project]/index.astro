@@ -17,7 +17,7 @@ const projectData = projects.find((p) => p.slug === project);
 if (!projectData) return Astro.redirect("/projects");
 ---
 
-<BaseLayout pageTitle="ONU Colegial">
+<BaseLayout pageTitle={projectData.name}>
   <div class="flex flex-col lg:flex-row">
     <div class="flex flex-col justify-center px-5 lg:pl-14 pt-nav h-screen">
       <h1 class="font-bold text-5xl">{projectData.name}</h1>
