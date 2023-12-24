@@ -17,12 +17,6 @@ dependencies:
   '@fontsource/fira-code':
     specifier: ^4.5.13
     version: 4.5.13
-  '@fontsource/overpass':
-    specifier: ^4.5.11
-    version: 4.5.11
-  '@fontsource/syne':
-    specifier: ^4.5.13
-    version: 4.5.13
   astro:
     specifier: 4.0.6
     version: 4.0.6(typescript@5.3.3)
@@ -665,14 +659,6 @@ packages:
 
   /@fontsource/fira-code@4.5.13:
     resolution: {integrity: sha512-T1IG6/2AXSwEKwlrEm3kyIL3RQTMblPyj68HgnBGl0IBGFxgS5LZ7StRdDo/QimJ4Tz6FQGHuy1Y/ShNxaUefA==}
-    dev: false
-
-  /@fontsource/overpass@4.5.11:
-    resolution: {integrity: sha512-x6A3fpFQdaqZ7O6LKyoeKzfzxjZhnJw1I7Yf4D8xKO8GM4N+0P8Ch6jIVD/DAgDmlc3/us5ZZEuaxwHJGiAkMA==}
-    dev: false
-
-  /@fontsource/syne@4.5.13:
-    resolution: {integrity: sha512-wZQJ3rf/CkE5PQLQYOfoDGXCp1t6yyA0VTcgElyLHcSNiUGrvNUylCk9SjDan0xCGnnJ4lpwZP1iNorbBgBpRQ==}
     dev: false
 
   /@iarna/toml@2.2.5:

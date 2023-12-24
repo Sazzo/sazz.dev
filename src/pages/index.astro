@@ -1,9 +1,30 @@
 ---
-import Header from "../components/Header.astro";
-
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout pageTitle="Home">
-  <Header />
+  <header
+    class="bg-gradient-to-r from-black to-neutral-900/50 flex grid-cols-1 h-screen md:grid md:grid-cols-2 md:grid-flow-row md:gap-20"
+  >
+    <section
+      class="flex flex-col gap-5 justify-center items-center w-screen px-5 md:w-max md:items-start md:pl-14"
+    >
+      <div class="font-bold text-6xl md:text-8xl">
+        <h1>Hi.</h1>
+        <h1>I'm Felipe.</h1>
+      </div>
+      <p class="text-center md:text-2xl">
+        A software developer and high schooler from Salvador, Brazil.
+      </p>
+    </section>
+    <section
+      class="h-screen items-center justify-center hidden md:flex md:pt-24"
+    >
+      <img
+        class="pointer-events-none w-3/4"
+        src="/macintosh.png"
+        alt="A Apple Computer Macintosh"
+      />
+    </section>
+  </header>
 </BaseLayout>
