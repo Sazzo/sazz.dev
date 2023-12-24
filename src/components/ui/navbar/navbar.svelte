@@ -66,7 +66,9 @@
   <div class="flex pt-8 items-center px-14 w-screen">
     <div class="hidden lg:flex lg:gap-12">
       {#each items as item (item.name)}
-        <a href={item.href}>{item.name}</a>
+        <a class="hover:bg-white hover:text-black" href={item.href}
+          >{item.name}</a
+        >
       {/each}
     </div>
   </div>
