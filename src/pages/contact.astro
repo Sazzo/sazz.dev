@@ -1,0 +1,50 @@
+---
+import Link from "../components/ui/link/link.svelte";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentPageLayout from "../layouts/ContentPageLayout.astro";
+
+const PGP_FINGERPRINT = "7B8B 736D 9D63 0974 144C 36B5 350E AC57 2CD9 4A60";
+---
+
+<BaseLayout pageTitle="Contact/Jobs">
+  <ContentPageLayout title="Contact/Jobs">
+    <h2 class="font-bold text-2xl mb-4">Social</h2>
+    <ul class="list-disc list-inside pl-6 text-lg mb-4 md:list-outside">
+      <li>Email: <Link to="mailto:felipe@sazz.dev">felipe@sazz.dev</Link></li>
+      <li>
+        Twitter: <Link to="https://twitter.com/FelipeSazz">@FelipeSazz</Link>
+      </li>
+      <li>Github: <Link to="https://github.com/Sazzo">@Sazzo</Link></li>
+      <li>
+        LinkedIn: <Link to="https://www.linkedin.com/in/felipesazz/">
+          linkedin.com/in/felipesazz
+        </Link>
+      </li>
+      <li>
+        Discord: <Link to="https://discord.com/users/326123612153053184">
+          @felipesazz
+        </Link>
+      </li>
+      <li>
+        PGP Fingerprint:
+        <a href="key.pub"
+          ><span class="font-mono font-medium">{PGP_FINGERPRINT}</span></a
+        >
+      </li>
+    </ul>
+
+    <h2 class="font-bold text-2xl mb-4">Work</h2>
+    <div class="flex flex-col gap-2">
+      <p>
+        If you enjoyed what you saw here, and wants a website, discord bot, or
+        other services. Feel free to contact me using my email or sending a DM
+        on Discord.
+      </p>
+      <p>
+        I'm also open to job offers, especially part-time/apprenticeship ("Jovem
+        Aprendiz" in Brazil), please feel free to contact me using email or
+        LinkedIn.
+      </p>
+    </div>
+  </ContentPageLayout>
+</BaseLayout>
