@@ -7,7 +7,7 @@
 
 <a href="/projects/{slug}" class="hover:opacity-80">
   <div
-    class="flex flex-col rounded-lg w-[420px] h-[330px] bg-[#121212] border border-[#2B2B2B]"
+    class="flex flex-col rounded-lg md:w-[420px] md:h-[330px] bg-[#121212] border border-[#2B2B2B]"
   >
     <img
       src="/projects/{coverImage}"
