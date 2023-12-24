@@ -5,7 +5,8 @@
     "shortDescription": "United Nations simulation for Colégio Antônio Vieira students.",
     "description": [
       "One of Brazil's largest United Nations simulations, it is an annual event with more than 200 participants and is organized by the students (and former students) of Colégio Antônio Vieira.",
-      "In 2022, I was a member of the team that helped with the organization and logistics of the event. In 2023, I became director of this same team and developed the check-in platform that allowed all participants to be accredited by the staff before the opening ceremony."
+      "In 2023, I became director of the logistics team, which I was part in 2022. I was responsible for managing the team and led the first in-house software development initiative, which resulted in our own event credential system and a foundation for future projects.",
+      "Today, in 2024, I'm the developer and member of the communications/marketing team of the Intercolegial, the event's sister project, which is a simulation for high school students from all over the state of Bahia, Brazil."
     ],
     "banner": "banners/onucolegial.png",
     "cover": "covers/onucolegial.png",
@@ -17,6 +18,43 @@
       {
         "name": "Instagram",
         "url": "https://instagram.com/onucolegial"
+      }
+    ]
+  },
+  {
+    "name": "Sagaz Club",
+    "slug": "sagazclub",
+    "shortDescription": "First iteration of the Sagaz's gaming tournament platform.",
+    "description": [
+      "Sagaz Club is a gaming community that organizes tournaments with cash prizes/rewards. I was responsible, as a contractor/freelancer, for the development and design of the first version of an in-house platform that allowed the organization of public tournaments with Discord integration."
+    ],
+    "banner": "banners/sagaz.png",
+    "cover": "covers/sagaz.png",
+    "links": [
+      {
+        "name": "Discord",
+        "url": "https://discord.gg/yGSMRTJWYP"
+      }
+    ]
+  },
+  {
+    "name": "Core das Antigas",
+    "slug": "core",
+    "shortDescription": "Discord bot for the brazilian content creator Core das Antigas.",
+    "description": [
+      "The Discord server of content creator Core das Antigas has more than 65,000 members and since 2018, uses a fun bot that allows the community to play different chat challenges.",
+      "In 2022, the team responsible for managing the server approached me with a desire to revamp the bot. The bot was rewritten using more modern tecnologies and with a better architecture, allowing easier maintenance and future improvements, plus more stability."
+    ],
+    "banner": "banners/core.png",
+    "cover": "covers/core.png",
+    "links": [
+      {
+        "name": "Youtube",
+        "url": "https://www.youtube.com/channel/UC-yA8YhrAgpFp4aVHRaNyMA"
+      },
+      {
+        "name": "Discord",
+        "url": "https://discord.gg/core"
       }
     ]
   },
