@@ -36,6 +36,9 @@ if (!projectData) return Astro.redirect("/projects");
         }
       </div>
     </div>
-    <img src={projectData.banner} class="h-full lg:h-screen grayscale" />
+    <img
+      src=`/projects/${projectData.banner}`
+      class="h-full lg:h-screen grayscale"
+    />
   </div>
 </BaseLayout>
