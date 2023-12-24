@@ -2,6 +2,7 @@
 import "@fontsource/fira-code/500.css";
 import "../base.css";
 
+import { ViewTransitions } from "astro:transitions";
 import Navbar from "../components/ui/navbar/navbar.svelte";
 
 interface Props {
@@ -47,9 +48,10 @@ const { pageTitle } = Astro.props;
     <meta property="og:locale" content="en_US" />
     <meta name="theme-color" content="#306FBD" />
     <title>FS. - {pageTitle}</title>
+    <ViewTransitions />
   </head>
   <body class="flex flex-col bg-black text-white">
-    <Navbar client:only />
+    <Navbar />
 
     <slot />
   </body>
