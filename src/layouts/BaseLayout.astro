@@ -51,7 +51,7 @@ const { pageTitle } = Astro.props;
     <ViewTransitions />
   </head>
   <body class="flex flex-col bg-black text-white">
-    <Navbar />
+    <Navbar client:load />
 
     <slot />
   </body>
