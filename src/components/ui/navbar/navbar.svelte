@@ -1,7 +1,7 @@
 <script lang="ts">
   import { fade } from "svelte/transition";
-  import { subscribeToLanyard } from "../../utils/lanyard";
-  import { truncate } from "../../utils/truncate";
+  import { subscribeToLanyard } from "../../../utils/lanyard";
+  import { truncate } from "../../../utils/truncate";
 
   const items: { name: string; href: string }[] = [
     {
@@ -78,7 +78,7 @@
       <div class="hidden lg:inline ml-auto lg:font-mono lg:text-sm" in:fade>
         I'M LISTENING TO: {$lanyardData.spotify.artist} - {truncate(
           $lanyardData.spotify.song,
-          20
+          20,
         )}
       </div>
     {/if}
@@ -98,7 +98,7 @@
         <div class="font-mono text-xs mt-auto pb-10">
           I'M LISTENING TO: {$lanyardData.spotify.artist} - {truncate(
             $lanyardData.spotify.song,
-            20
+            20,
           )}
         </div>
       {/if}

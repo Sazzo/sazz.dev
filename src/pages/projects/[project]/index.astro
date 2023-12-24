@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Link from "../../../components/ui/link/link.svelte";
+
+const { project } = Astro.params;
+
+import projectsData from "../../../data/projects.json";
+const projects = projectsData as {
+  name: string;
+  slug: string;
+  description: string[];
+  banner: string;
+  links: { name: string; url: string }[];
+}[];
+
+const projectData = projects.find((p) => p.slug === project);
+if (!projectData) return Astro.redirect("/projects");
+---
+
+<BaseLayout pageTitle="ONU Colegial">
+  <div class="flex flex-col lg:flex-row">
+    <div class="flex flex-col justify-center px-5 lg:pl-14 pt-nav h-screen">
+      <h1 class="font-bold text-5xl">{projectData.name}</h1>
+
+      <div
+        class="pt-5 prose-invert text-left prose-p:mb-4 lg:text-xl lg:w-4/5 lg:prose-p:px-0"
+      >
+        {projectData.description.map((p) => <p>{p}</p>)}
+      </div>
+
+      <div class="flex flex-row gap-7">
+        {
+          projectData.links.map((link) => (
+            <Link to={link.url}>{link.name}</Link>
+          ))
+        }
+      </div>
+    </div>
+    <img src={projectData.banner} class="h-full lg:h-screen grayscale" />
+  </div>
+</BaseLayout>

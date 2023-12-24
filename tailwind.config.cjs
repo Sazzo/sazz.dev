@@ -8,7 +8,7 @@ module.exports = {
       },
 
       padding: {
-        nav: "3rem",
+        nav: "6rem",
       },
     },
 
